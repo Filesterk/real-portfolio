@@ -1,8 +1,8 @@
 
-
 body {
   margin: 0;
   padding: 0;
+}
   .btn {
     color: #ffffff;
     border: 2px solid green;
@@ -14,13 +14,11 @@ body {
     height: 65px;
   }
   .header {
-    /*background: #232d50;*/
     background: url(../img/intro.jpg) no-repeat;
     background-size: cover;
     min-height: 100vh;
     width: 100%;
   }
-
   .navbar {
     background: #15263e;
   }
@@ -75,7 +73,7 @@ body {
     }
   }
  }
-}
+
 
 /*ABOUT*/
 .about {
@@ -207,8 +205,9 @@ background: linear-gradient(45deg, #a21af0 33%, #d310c4 66%, #ff0072);
     height: 100%;
   }
 }
+/*/SERVICES*/
 
-/*Testimonials  */
+/*TESTIMONIALS*/
 .reviews {
   background-image: url("../img/testim-fon.jpg");
   background-position: center;
@@ -263,11 +262,10 @@ background: linear-gradient(45deg, #a21af0 33%, #d310c4 66%, #ff0072);
     margin-bottom: 1rem;
   }
 }
+/*TESTIMONIALS*/
 
 /*PORTFOLIO*/
-.nav li.active {
-  background: hsl(174, 100%, 20%);
-}
+
 .portfolio {
   height: 1510px;
   h1 {
@@ -282,20 +280,20 @@ background: linear-gradient(45deg, #a21af0 33%, #d310c4 66%, #ff0072);
     height: 100%;
   }
 }
-.portfolio-menu {
+.portfolio__menu {
   text-align: left;
   font-size: 22px;
   margin-bottom: 40px;
-  font-weight: 600;
+  font-weight: 700;
 }
-.portfolio-menu ul li {
+.portfolio__menu ul li {
   list-style: none;
   cursor: pointer;
   transition: all 0.5s ease;
+  margin-bottom: 30px;
 }
-.portfolio-menu ul li:hover {
-  background: tomato;
-  color: #ffffff;
+.portfolio__menu ul li:hover {
+  color: #c714d5;
 }
 .portfolio-item {
   width: 100%;
@@ -305,8 +303,10 @@ background: linear-gradient(45deg, #a21af0 33%, #d310c4 66%, #ff0072);
   float: left;
   margin-bottom: 10px;
 }
-li .active {
-  color: tomato;
+
+.filter-2 img{
+  margin-bottom: 30px;
+  
 }
 
 /*EXPERIENCE*/

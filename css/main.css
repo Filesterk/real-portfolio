@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-body .btn {
+.btn {
   color: #ffffff;
   border: 2px solid green;
   padding: 1rem;
@@ -14,30 +14,29 @@ body .btn {
   height: 65px;
 }
 
-body .header {
-  /*background: #232d50;*/
+.header {
   background: url(../img/intro.jpg) no-repeat;
   background-size: cover;
   min-height: 100vh;
   width: 100%;
 }
 
-body .navbar {
+.navbar {
   background: #15263e;
 }
 
-body .header_banner {
+.header_banner {
   padding-top: 100px;
 }
 
-body .header_title {
+.header_title {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-body .header_title h1 {
+.header_title h1 {
   font-size: 206px;
   background: -webkit-gradient(linear, left top, right top, color-stop(33%, #a21af0), color-stop(66%, #d310c4), to(#ff0072));
   background: linear-gradient(90deg, #a21af0 33%, #d310c4 66%, #ff0072);
@@ -48,37 +47,37 @@ body .header_title h1 {
   margin-bottom: -50px;
 }
 
-body .header_title h4 {
+.header_title h4 {
   font-size: 47px;
   margin-bottom: -50px;
 }
 
-body .header_title h2 {
+.header_title h2 {
   font-size: 120px;
   margin-bottom: -20px;
 }
 
-body .header_title p {
+.header_title p {
   font-size: 25px;
   margin-bottom: 60px;
 }
 
 @media screen and (max-width: 976px) {
-  body .header {
+  .header {
     height: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body .header_title h1 {
+  .header_title h1 {
     font-size: 120px;
     margin-bottom: -20px;
   }
-  body .header_title h2 {
+  .header_title h2 {
     font-size: 60px;
     margin-bottom: 0;
   }
-  body .header_title h4 {
+  .header_title h4 {
     font-size: 30px;
     margin-bottom: -20px;
   }
@@ -236,7 +235,8 @@ body .header_title p {
   }
 }
 
-/*Testimonials  */
+/*/SERVICES*/
+/*TESTIMONIALS*/
 .reviews {
   background-image: url("../img/testim-fon.jpg");
   background-position: center;
@@ -305,11 +305,8 @@ body .header_title p {
   }
 }
 
+/*TESTIMONIALS*/
 /*PORTFOLIO*/
-.nav li.active {
-  background: #00665c;
-}
-
 .portfolio {
   height: 1510px;
 }
@@ -327,23 +324,23 @@ body .header_title p {
   }
 }
 
-.portfolio-menu {
+.portfolio__menu {
   text-align: left;
   font-size: 22px;
   margin-bottom: 40px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.portfolio-menu ul li {
+.portfolio__menu ul li {
   list-style: none;
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  margin-bottom: 30px;
 }
 
-.portfolio-menu ul li:hover {
-  background: tomato;
-  color: #ffffff;
+.portfolio__menu ul li:hover {
+  color: #c714d5;
 }
 
 .portfolio-item {
@@ -356,8 +353,8 @@ body .header_title p {
   margin-bottom: 10px;
 }
 
-li .active {
-  color: tomato;
+.filter-2 img {
+  margin-bottom: 30px;
 }
 
 /*EXPERIENCE*/
