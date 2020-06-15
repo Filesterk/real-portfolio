@@ -5,12 +5,13 @@
        height: 100%;
    }
    h3 {
-     font-size: 50px;
+    @include name-section(); 
+    /*font-size: 50px;
      color: $primary-text-color;
      margin-top: 95px;
      text-transform: uppercase;
      margin-bottom: 20px;
-     font-weight: 700;
+     font-weight: 700;*/
    }
    p{
      font-size: 18px;

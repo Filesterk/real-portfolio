@@ -2,11 +2,13 @@
 .blog {
    height: 860px;
    h3 {
-     font-size: 50px;
+     @include name-section();
+     /*font-size: 50px;
      color: $primary-text-color;
      font-weight: 600;
      margin-top: 105px;
      margin-bottom: 35px;
+     text-transform: uppercase;*/
    }
    h4 {
      font-size: 20px;

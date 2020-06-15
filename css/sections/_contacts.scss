@@ -1,9 +1,10 @@
 /*CONTACT-US*/
 .intro {
+  @include background-img('../img/map.jpg');
    height: 770px;
    width: 100%;
-   background: url(../img/map.jpg) no-repeat center center;
-   background-size: cover;
+   /*background: url(../img/map.jpg) no-repeat center center;
+   background-size: cover;*/
    h1 {
      color: $primary-color-text;
      font-size: 50px;
