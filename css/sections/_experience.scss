@@ -7,13 +7,12 @@
        height: 100%;
    }
    h3 {
-     @include name-section();
-     /*padding-top: 110px;
+     padding-top: 110px;
      color: $primary-color-text;
      margin-bottom: 20px;
      font-size: 50px;
      text-transform: uppercase;
-     font-weight: 600;*/
+     font-weight: 600;
    }
    h4{
      font-size: 25px;

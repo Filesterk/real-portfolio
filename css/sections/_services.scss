@@ -3,10 +3,13 @@
    height: 1000px;
    padding-top: 90px;
    h3 {
-     font-size: 50px;
+    @include name-section();
+     /*font-size: 50px;
      color: $primary-text-color;
      text-transform: uppercase;
+     margin-top: 100px;
      margin-bottom: 20px;
+     font-weight: 600;*/
    }
    p {
      font-size: 18px;
