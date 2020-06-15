@@ -1,0 +1,62 @@
+/*HEADER*/
+.header {
+   background: url(../img/intro.jpg) no-repeat;
+   background-size: cover;
+   min-height: 100vh;
+   width: 100%;  
+   @media screen and (max-width: 976px) {      
+       height: 100%;      
+   }
+ &__banner {
+   padding-top: 100px;
+ }
+ &__title {
+   text-align: center;
+   color: $primary-color-text;
+   text-transform: uppercase;
+   font-weight: 600;
+   h1 {
+     font-size: 206px;
+     background: linear-gradient(90deg, #a21af0 33%, #d310c4 66%, #ff0072);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     color: #a21af0;
+     font-weight: 600;
+     margin-bottom: -50px;
+   }
+   h2 {
+     font-size: 120px;
+     color: $primary-color-text;
+   }
+   h3 {
+     font-size: 47px;
+     margin-bottom: -50px;
+     color: $primary-color-text;
+   }  
+   h4 {
+     font-size: 25px;
+     margin-bottom: 60px;
+     color: $primary-color-text;
+   }
+ }
+}
+ .navbar {
+   background: #15263e;
+ }
+@media screen and (max-width: 768px) {
+   .header__title {
+      h1 {
+        font-size: 120px;
+        margin-bottom: -20px;
+   }
+   h2{
+      font-size: 60px;
+      margin-bottom: 0;
+   }
+   h3{
+      font-size: 30px;
+      margin-bottom: -20px;
+   }
+ }
+}
+/*/HEADER*/

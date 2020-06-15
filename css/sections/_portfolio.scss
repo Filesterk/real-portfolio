@@ -1,0 +1,48 @@
+/*PORTFOLIO*/
+.portfolio {
+   height: 1510px;
+   @media screen and (max-width: 1600px) {
+       height: 100%;
+   }
+   h3 {
+     font-size: 50px;
+     color: $primary-text-color;
+     margin-top: 95px;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+     font-weight: 700;
+   }
+   p{
+     font-size: 18px;
+     margin-bottom: 75px;
+   }
+ &__menu {
+   text-align: left;
+   color: $primary-text-color;
+   font-size: 22px;
+   margin-bottom: 40px;
+   font-weight: 700;
+ }
+ &__menu ul li {
+   list-style: none;
+   cursor: pointer;
+   transition: all 0.5s ease;
+   margin-bottom: 30px;
+ }
+ &__menu ul li:hover {
+   color: #c714d5;
+ }
+ }
+ .portfolio-item {
+   width: 100%;
+ }
+ .portfolio-item .item {
+   width: 100%;
+   float: left;
+   margin-bottom: 10px;
+ }
+ .filter-2 img{
+   margin-bottom: 30px;  
+ }
+ /*/PORTFOLIO*/
+ 

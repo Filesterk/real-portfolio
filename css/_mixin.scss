@@ -1,0 +1,14 @@
+@mixin background-img($src) {
+   background: url($src);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ //h3
+ @mixin name-section() {
+   font-size: 80px;
+    color: $primary-text-color;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+ }

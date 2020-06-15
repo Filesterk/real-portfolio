@@ -1,0 +1,28 @@
+/*SERVICES*/
+.services {
+   height: 1000px;
+   padding-top: 90px;
+   h3 {
+     font-size: 50px;
+     color: $primary-text-color;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+   }
+   p {
+     font-size: 18px;
+     //margin-top: 35px;
+     margin-bottom: 75px;
+   }
+   h4 {
+     text-transform: uppercase;
+     font-size: 25px;
+     color: $primary-text-color;
+     font-weight: 700;
+     margin-top: 25px;
+   }
+ @media screen and (max-width: 1600px) {  
+     height: 100%;  
+ }
+ }
+ /*/SERVICES*/
+ 

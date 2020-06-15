@@ -1,0 +1,75 @@
+/*CONTACT-US*/
+.intro {
+   height: 770px;
+   width: 100%;
+   background: url(../img/map.jpg) no-repeat center center;
+   background-size: cover;
+   h1 {
+     color: $primary-color-text;
+     font-size: 50px;
+     font-weight: 600;
+     text-transform: uppercase;
+     margin-bottom: 30px;
+   }
+   p {
+     color: $primary-color-text;
+     font-size: 18px;
+     margin-bottom: 60px;
+   }
+ }
+ .container__form{
+   background: #15263e;
+   width: 1170px;
+   height: 640px;
+   margin-top: 70px;
+   padding-top: 70px;
+   text-align: center;
+ }
+ .form__input{
+   width: 970px;
+   margin: auto;  
+   input{
+     width: 270px;
+     height: 60px;
+   }
+ }
+ .form__message{
+   width: 940px;
+   height: 110px;
+   margin: auto;
+ }
+ @media screen and (max-width: 1600px) {  
+   .container__form {
+     width: 100%;
+   }
+ }
+ @media screen and (max-width: 1200px) {
+   .form__input {
+       width: 100%;   
+   }
+   .form__message{
+     width: 570px;
+     height: 80px;
+   }
+ }
+ @media screen and (max-width: 992px) {
+   .container__form{
+     padding-top: 30px;
+   }
+   .intro{
+ h1{
+ font-size: 40px;
+ }
+ p{
+ margin-bottom: 30px;
+ }
+ }
+   .form__input {
+     input{
+ margin-bottom: 15px;
+     }     
+   
+ }
+   }
+ 
+ 

@@ -1,0 +1,73 @@
+/*ABOUT*/
+.about {
+   height: 595px;  
+   h3 {
+     font-size: 50px;
+     color: $primary-text-color;
+     font-weight: 600;
+     padding-top: 135px;
+     text-align: right;
+     text-transform: uppercase;
+   }
+   h4 {
+     font-size: 20px;
+     color: #a21af0;
+     margin-bottom: 40px;
+     text-align: right;
+     text-transform: uppercase;
+   }  
+   img {
+     margin-top: 35px;
+   }
+   &__text{
+     text-align: right;
+     font-size: 1rem;
+    }
+    @media screen and (max-width: 1290px) {    
+       height: 100%;
+       img{
+         width: 100%;
+         height: 100%;
+       }
+     }
+     @media screen and (max-width: 836px) {      
+         h3{
+           padding-top: 50px;
+         }
+       }    
+ }
+ .about{
+ &__progress {
+   width: 332px;
+   display: flex;
+   flex-direction: column;
+   padding-top: 155px;
+   order: 3;
+   @media (max-width: 1024px) {
+     padding-top: 50px;
+   }
+   &-title {
+     text-align: center;
+     margin-bottom: 15px;
+     font-size: 18px;
+     color: $primary-text-color;
+     font-weight: 700;
+     text-transform: uppercase;
+   }
+ }
+ }
+ .nanoprogress {
+ margin-bottom: 44px;
+ }
+ .my-class {
+ height: 10px;
+ background: #DCDCDE;
+ border-radius: 5px;
+ }
+ .nanoprogress .bar {
+ width: 332px;
+ height: 10px;
+ border-radius: 10px;
+ background: linear-gradient(45deg, #a21af0 33%, #d310c4 66%, #ff0072);
+ }
+ 

@@ -1,0 +1,42 @@
+/*EXPERIENCE*/
+.experience {
+   height: 1060px;
+   background: linear-gradient(45deg, #a21af0 33%, #d310c4 66%, #ff0072);
+   color: $primary-color-text;
+   @media screen and (max-width: 768px) {
+       height: 100%;
+   }
+   h3 {
+     padding-top: 110px;
+     color: $primary-color-text;
+     margin-bottom: 20px;
+     font-size: 50px;
+     text-transform: uppercase;
+   }
+   h4{
+     font-size: 25px;
+     color: $primary-color-text;
+     font-weight: 700;
+   }
+ &__text {
+   font-size: 18px;
+   margin-bottom: 110px;
+ }
+ &__start__left {
+   text-transform: uppercase;
+   border-right: 10px solid #ff6347;
+   padding-right: 50px;
+   text-align: right;
+ }
+ &__start__right p {
+   margin-bottom: 5rem;
+ }
+ &__end__right {
+   text-transform: uppercase;
+   border-left: 10px solid #ff6347;
+   padding-left: 50px;
+   text-align: left;
+   margin-bottom: 5rem;
+ }
+ }
+ 

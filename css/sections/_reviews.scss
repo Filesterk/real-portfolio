@@ -1,0 +1,58 @@
+/*TESTIMONIALS*/
+.reviews {
+   background-image: url("../img/testim-fon.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 3rem;
+   height: 620px;
+   h3 {
+     margin-top: 135px;
+     margin-bottom: 55px;
+     font-size: 50px;
+     color: $primary-color-text;
+     font-weight: 700;
+     text-transform: uppercase;
+     text-align: center;
+   }
+   @media screen and (max-width: 1600px) {
+       height: 100%;
+       h3{
+         margin-top: 80px;
+       }
+   }
+   &__img {
+     border-radius: 145px;
+   }
+   &__text {
+     text-align: right;
+     color: $primary-color-text;
+     padding-right: 50px;
+   }
+ &__name {
+   display: flex;
+   flex-direction: column;
+   h4 {
+     font-size: 34px;
+     color: $primary-color-text;
+     font-weight: 600;
+     text-transform: uppercase;
+     text-align: center;
+     padding-top: 20px;
+   }
+   p {
+     color: #c714d5;
+     font-size: 15px;
+     font-weight: 700;
+     text-transform: none;
+     text-align: center;
+   }
+ }
+ }
+ @media screen and (max-width: 992px) {
+   .reviews__describe {
+     margin-bottom: 1rem;
+   }
+ }
+ /*/TESTIMONIALS*/
+ 
