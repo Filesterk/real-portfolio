@@ -3,28 +3,29 @@
    height: 860px;
    h3 {
      @include name-section();
-     /*font-size: 50px;
      color: $primary-text-color;
-     font-weight: 600;
-     margin-top: 105px;
-     margin-bottom: 35px;
-     text-transform: uppercase;*/
    }
    h4 {
-     font-size: 20px;
+     font-size: 1.5em;
      font-weight: 700;
    }
    h5 {
-     font-size: 15px;
+     font-size: 1.25em;
      color: $secondary-text-color;
+     text-transform: uppercase;
+     font-weight: 600;
    }
    p{
-     font-size: 18px;
+     font-size: 1.25em;
    }
    &__card {
      width: 370px;
      margin-top: 80px;
      margin-bottom: 80px;
+     @media screen and (max-width: 768px) {
+       margin-top: 20px;
+      margin-bottom: 20px;
+      }
  }
  @media screen and (max-width: 1600px) { 
      height: 100%;  

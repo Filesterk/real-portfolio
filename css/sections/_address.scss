@@ -13,14 +13,21 @@
    &__card {
      background-color: #DCDCDE;
      border: none;
+     padding: 10px;
+     h4{
+       font-size: 1.25em;
+       text-transform: uppercase;
+       font-weight: 650;
+     }
+     p{
+      font-size: 1.25em;
+      margin-bottom: -5px;
+    }
    }
+
  @media screen and (max-width: 1600px) {
      height: 100%;
  }
- }
- .card-body p{
-   font-size: 18px;
-   margin-bottom: -5px;
  }
  /*/ADDRESS*/
  

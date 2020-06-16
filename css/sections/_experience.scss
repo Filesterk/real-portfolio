@@ -7,20 +7,23 @@
        height: 100%;
    }
    h3 {
-     padding-top: 110px;
-     color: $primary-color-text;
+    @include name-section(); 
+    color: $primary-color-text;
+    padding-top: 100px;
+     /*padding-top: 110px;
+     
      margin-bottom: 20px;
-     font-size: 50px;
+     font-size: 3em;
      text-transform: uppercase;
-     font-weight: 600;
+     font-weight: 600;*/
    }
    h4{
-     font-size: 25px;
+     font-size: 1.5em;
      color: $primary-color-text;
      font-weight: 700;
    }
  &__text {
-   font-size: 18px;
+   font-size: 1.25em;
    margin-bottom: 110px;
  }
  &__start__left {
@@ -28,8 +31,13 @@
    border-right: 10px solid #ff6347;
    padding-right: 50px;
    text-align: right;
+   
  }
+ &__end__left p{
+  font-size: 1.25em;
+}
  &__start__right p {
+   font-size: 1.25em;
    margin-bottom: 5rem;
  }
  &__end__right {

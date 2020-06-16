@@ -1,6 +1,16 @@
+/*@mixin name-section() {
+  font-size: 3em;
+   color: $primary-color-text;
+   margin-top: 100px;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   font-weight: 700;
+}*/
 /*HEADER*/
 .header {
-  @i background: url(../img/intro.jpg) no-repeat;
+  background: url("../img/intro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   width: 100%;
@@ -20,33 +30,43 @@
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .header__title h1 {
-  font-size: 206px;
+  font-size: 15em;
   background: -webkit-gradient(linear, left top, right top, color-stop(33%, #a21af0), color-stop(66%, #d310c4), to(#ff0072));
   background: linear-gradient(90deg, #a21af0 33%, #d310c4 66%, #ff0072);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #a21af0;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: -50px;
 }
 
 .header__title h2 {
-  font-size: 120px;
+  font-size: 7em;
   color: #FFFFFF;
+  font-weight: 700;
 }
 
 .header__title h3 {
-  font-size: 47px;
-  margin-bottom: -50px;
+  font-size: 3em;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
   color: #FFFFFF;
+  margin-top: 60px;
+  margin-bottom: -50px;
+  /*font-size: 3em;
+     margin-bottom: -50px;
+     
+     font-weight: 700;*/
 }
 
 .header__title h4 {
-  font-size: 25px;
+  font-size: 1.5em;
   margin-bottom: 60px;
   color: #FFFFFF;
 }
@@ -57,15 +77,15 @@
 
 @media screen and (max-width: 768px) {
   .header__title h1 {
-    font-size: 120px;
+    font-size: 10em;
     margin-bottom: -20px;
   }
   .header__title h2 {
-    font-size: 60px;
+    font-size: 4em;
     margin-bottom: 0;
   }
   .header__title h3 {
-    font-size: 30px;
+    font-size: 2.5em;
     margin-bottom: -20px;
   }
 }
@@ -77,20 +97,26 @@
 }
 
 .about h3 {
-  font-size: 50px;
-  color: #212121;
-  font-weight: 600;
-  padding-top: 135px;
-  text-align: right;
+  font-size: 3em;
+  margin-top: 100px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  font-weight: 600;
+  color: #212121;
+  /*font-size: 3em;
+     font-weight: 600;
+     padding-top: 100px;     
+     text-transform: uppercase;*/
+  text-align: right;
 }
 
 .about h4 {
-  font-size: 20px;
+  font-size: 1.25em;
   color: #a21af0;
   margin-bottom: 40px;
   text-align: right;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .about img {
@@ -99,7 +125,7 @@
 
 .about__text {
   text-align: right;
-  font-size: 1rem;
+  font-size: 1.25em;
 }
 
 @media screen and (max-width: 1290px) {
@@ -142,7 +168,7 @@
 .about__progress-title {
   text-align: center;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 1.25em;
   color: #212121;
   font-weight: 700;
   text-transform: uppercase;
@@ -183,6 +209,18 @@
 .address__card {
   background-color: #DCDCDE;
   border: none;
+  padding: 10px;
+}
+
+.address__card h4 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 650;
+}
+
+.address__card p {
+  font-size: 1.25em;
+  margin-bottom: -5px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -191,33 +229,29 @@
   }
 }
 
-.card-body p {
-  font-size: 18px;
-  margin-bottom: -5px;
-}
-
 /*/ADDRESS*/
 /*SERVICES*/
 .services {
   height: 1000px;
-  padding-top: 90px;
 }
 
 .services h3 {
-  font-size: 50px;
-  color: #212121;
+  font-size: 3em;
+  margin-top: 100px;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  font-weight: 600;
+  color: #212121;
 }
 
 .services p {
-  font-size: 18px;
+  font-size: 1.25em;
   margin-bottom: 75px;
 }
 
 .services h4 {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 1.5em;
   color: #212121;
   font-weight: 700;
   margin-top: 25px;
@@ -232,22 +266,30 @@
 /*/SERVICES*/
 /*TESTIMONIALS*/
 .reviews {
-  background-image: url("../img/testim-fon.jpg");
+  background: url("../img/testim-fon.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3rem;
+  padding-bottom: 3em;
   height: 620px;
 }
 
 .reviews h3 {
-  margin-top: 135px;
-  margin-bottom: 55px;
-  font-size: 50px;
-  color: #FFFFFF;
-  font-weight: 700;
+  font-size: 3em;
+  margin-top: 100px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  font-weight: 600;
+  color: #FFFFFF;
   text-align: center;
+  margin-bottom: 60px;
+  /*margin-top: 135px;
+     margin-bottom: 55px;
+     font-size: 3em;
+     
+     font-weight: 700;
+     text-transform: uppercase;
+     text-align: center;*/
 }
 
 @media screen and (max-width: 1600px) {
@@ -267,6 +309,7 @@
   text-align: right;
   color: #FFFFFF;
   padding-right: 50px;
+  font-size: 1.25em;
 }
 
 .reviews__name {
@@ -280,7 +323,7 @@
 }
 
 .reviews__name h4 {
-  font-size: 34px;
+  font-size: 2.25em;
   color: #FFFFFF;
   font-weight: 600;
   text-transform: uppercase;
@@ -290,7 +333,7 @@
 
 .reviews__name p {
   color: #c714d5;
-  font-size: 15px;
+  font-size: 1.25em;
   font-weight: 700;
   text-transform: none;
   text-align: center;
@@ -306,6 +349,9 @@
 /*PORTFOLIO*/
 .portfolio {
   height: 1510px;
+  /*&__menu ul li:hover {
+   color: #c714d5;
+ }*/
 }
 
 @media screen and (max-width: 1600px) {
@@ -315,23 +361,23 @@
 }
 
 .portfolio h3 {
-  font-size: 50px;
-  color: #212121;
-  margin-top: 95px;
+  font-size: 3em;
+  margin-top: 100px;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 600;
+  color: #212121;
 }
 
 .portfolio p {
-  font-size: 18px;
+  font-size: 1.25em;
   margin-bottom: 75px;
 }
 
 .portfolio__menu {
   text-align: left;
   color: #212121;
-  font-size: 22px;
+  font-size: 1.5em;
   margin-bottom: 40px;
   font-weight: 700;
 }
@@ -344,8 +390,17 @@
   margin-bottom: 30px;
 }
 
-.portfolio__menu ul li:hover {
+@media screen and (max-width: 992px) {
+  .portfolio__menu ul li {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+  }
+}
+
+.portfolio__menu ul li a:hover {
   color: #c714d5;
+  text-decoration: none;
 }
 
 .portfolio-item {
@@ -360,6 +415,12 @@
 
 .filter-2 img {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .filter-2 img {
+    width: 100%;
+  }
 }
 
 /*/PORTFOLIO*/
@@ -377,21 +438,29 @@
 }
 
 .experience h3 {
-  padding-top: 110px;
-  color: #FFFFFF;
-  margin-bottom: 20px;
-  font-size: 50px;
+  font-size: 3em;
+  margin-top: 100px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding-top: 100px;
+  /*padding-top: 110px;
+     
+     margin-bottom: 20px;
+     font-size: 3em;
+     text-transform: uppercase;
+     font-weight: 600;*/
 }
 
 .experience h4 {
-  font-size: 25px;
+  font-size: 1.5em;
   color: #FFFFFF;
   font-weight: 700;
 }
 
 .experience__text {
-  font-size: 18px;
+  font-size: 1.25em;
   margin-bottom: 110px;
 }
 
@@ -402,7 +471,12 @@
   text-align: right;
 }
 
+.experience__end__left p {
+  font-size: 1.25em;
+}
+
 .experience__start__right p {
+  font-size: 1.25em;
   margin-bottom: 5rem;
 }
 
@@ -420,31 +494,41 @@
 }
 
 .blog h3 {
-  font-size: 50px;
-  color: #212121;
+  font-size: 3em;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
   font-weight: 600;
-  margin-top: 105px;
-  margin-bottom: 35px;
+  color: #212121;
 }
 
 .blog h4 {
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 .blog h5 {
-  font-size: 15px;
+  font-size: 1.25em;
   color: #757575;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .blog p {
-  font-size: 18px;
+  font-size: 1.25em;
 }
 
 .blog__card {
   width: 370px;
   margin-top: 80px;
   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog__card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -459,23 +543,31 @@
 /*/BLOG*/
 /*CONTACT-US*/
 .intro {
+  background: url("../img/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 770px;
   width: 100%;
-  background: url(../img/map.jpg) no-repeat center center;
-  background-size: cover;
 }
 
-.intro h1 {
-  color: #FFFFFF;
-  font-size: 50px;
-  font-weight: 600;
+.intro h3 {
+  font-size: 3em;
+  margin-top: 100px;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: 10px;
+  /*font-size: 3em;
+     font-weight: 600;
+     text-transform: uppercase;
+     margin-bottom: 30px;*/
 }
 
 .intro p {
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 1.25em;
   margin-bottom: 60px;
 }
 
@@ -494,14 +586,17 @@
 }
 
 .form__input input {
-  width: 270px;
   height: 60px;
+  font-size: 1.5em;
 }
 
-.form__message {
+.textarea__message {
   width: 940px;
   height: 110px;
+  font-size: 1.5em;
   margin: auto;
+  margin-bottom: 25px;
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -514,9 +609,8 @@
   .form__input {
     width: 100%;
   }
-  .form__message {
-    width: 570px;
-    height: 80px;
+  .textarea__message {
+    width: 100%;
   }
 }
 
@@ -525,7 +619,7 @@
     padding-top: 30px;
   }
   .intro h1 {
-    font-size: 40px;
+    font-size: 2.5em;
   }
   .intro p {
     margin-bottom: 30px;
@@ -541,6 +635,7 @@ footer {
 }
 
 footer p {
+  font-size: 1em;
   margin-top: 75px;
 }
 
@@ -552,11 +647,12 @@ body {
 .btn {
   color: #ffffff;
   border: 2px solid green;
-  padding: 1rem;
+  padding: 12px;
   background: linear-gradient(45deg, #a21af0 33%, #d310c4 66%, #ff0072);
-  border-radius: 0.5rem;
-  font-size: 18px;
+  font-size: 1.25em;
   width: 215px;
   height: 65px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

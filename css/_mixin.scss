@@ -5,10 +5,18 @@
    background-size: cover;
  }
  @mixin name-section() {
-   font-size: 50px;
-    color: $primary-text-color;
+   font-size: 3em;
+    //color: $primary-text-color;
     margin-top: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: 600;
  }
+ /*@mixin name-section() {
+  font-size: 3em;
+   color: $primary-color-text;
+   margin-top: 100px;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   font-weight: 700;
+}*/

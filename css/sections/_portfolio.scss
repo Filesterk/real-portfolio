@@ -6,21 +6,16 @@
    }
    h3 {
     @include name-section(); 
-    /*font-size: 50px;
-     color: $primary-text-color;
-     margin-top: 95px;
-     text-transform: uppercase;
-     margin-bottom: 20px;
-     font-weight: 700;*/
+    color: $primary-text-color;
    }
    p{
-     font-size: 18px;
+     font-size: 1.25em;
      margin-bottom: 75px;
    }
  &__menu {
    text-align: left;
    color: $primary-text-color;
-   font-size: 22px;
+   font-size: 1.5em;
    margin-bottom: 40px;
    font-weight: 700;
  }
@@ -29,10 +24,19 @@
    cursor: pointer;
    transition: all 0.5s ease;
    margin-bottom: 30px;
+   @media screen and (max-width: 992px) {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+}
+   & a:hover{
+     color: #c714d5;
+     text-decoration: none;
+   }
  }
- &__menu ul li:hover {
+ /*&__menu ul li:hover {
    color: #c714d5;
- }
+ }*/
  }
  .portfolio-item {
    width: 100%;
@@ -43,7 +47,10 @@
    margin-bottom: 10px;
  }
  .filter-2 img{
-   margin-bottom: 30px;  
+   margin-bottom: 30px; 
+   @media screen and (max-width: 992px) {
+    width: 100%;
+}
  }
  /*/PORTFOLIO*/
  

@@ -8,6 +8,9 @@ $primary-text-color:   #212121;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
 
+//MIXINS
+@import "./_mixin.scss";
+
 // SECTIONS
 @import "./sections/header";
 @import "./sections/about";
@@ -20,7 +23,6 @@ $divider-color:        #BDBDBD;
 @import "./sections/contacts";
 @import "./sections/footer";
 
-@import "./_mixin.scss";
 body {
   margin: 0;
   padding: 0;
@@ -28,12 +30,13 @@ body {
   .btn {
     color: #ffffff;
     border: 2px solid green;
-    padding: 1rem;
+    padding: 12px;
     background: linear-gradient(45deg, #a21af0 33%, #d310c4 66%, #ff0072);
-    border-radius: 0.5rem;
-    font-size: 18px;
+    font-size: 1.25em;
     width: 215px;
     height: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
   
 
