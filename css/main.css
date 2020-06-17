@@ -524,13 +524,6 @@
   margin-bottom: 80px;
 }
 
-@media screen and (max-width: 768px) {
-  .blog__card {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}
-
 @media screen and (max-width: 1600px) {
   .blog {
     height: 100%;
