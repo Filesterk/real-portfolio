@@ -2,7 +2,7 @@
 <html lang="en">
 <head> 
 	<meta charset="UTF-8">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
@@ -11,33 +11,33 @@
 <body> 
 
 	<!--HEADER-->	
-<header class="header">	
-		<nav class="navbar navbar-expand-lg navbar-dark">
+<header class="header text-uppercase">	
+		<nav class="navbar navbar-expand-md navbar-dark">
 			<div class="container header__inner">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" 
 			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-			aria-expanded="false" aria-label="Toggle navigation">
+			aria-expanded="" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
 		 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			  <ul class="navbar-nav w-100 justify-content-between">
-				 <li class="nav-item active">
+			  <ul class="navbar-nav w-100 justify-content-between nav__menu">
+				 <li class="nav-item active nav__menu-item">
 					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 				 </li>
-				 <li class="nav-item">
+				 <li class="nav-item nav__menu-item">
 					<a class="nav-link" href="#">About</a>
 				 </li>				 
-				 <li class="nav-item">
+				 <li class="nav-item nav__menu-item">
 					<a class="nav-link" href="#">Our services</a>
 				 </li>
-				 <li class="nav-item">
+				 <li class="nav-item nav__menu-item">
 					<a class="nav-link" href="#">Portfolio</a>
 				 </li>
-				 <li class="nav-item">
+				 <li class="nav-item nav__menu-item">
 					<a class="nav-link" href="#">Experience</a>
 				 </li>
-				 <li class="nav-item">
+				 <li class="nav-item nav__menu-item">
 					<a class="nav-link" href="#">Blog</a>
 				 </li>
 				 <li class="nav-item">
@@ -70,7 +70,7 @@
 <section class="about">
 	<div class="container-fluid">
 	<div class="row justify-content-md-center">
-		<div class="col col-lg-3 order-2 order-md-1">
+		<div class="col-lg-3 col-md-6 order-2 order-md-1">		
 			<h3>John Smith</h3>
 			<h4>Web designer</h4>
 			<p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -80,7 +80,7 @@
 		<div class="col-md-auto order-1 order-md-2">
 			<img src="img/about.jpg" alt="">			
 		</div>
-		<div class="col col-lg-3 order-3 order-md-3">
+		<div class="col-lg-3 col-md-6 order-3 order-md-3">		
 			<div class="about__progress">
 				<p class="about__progress-title">Design ( 80% )</p>
 				<div class="nanoprogress" id="nanoprogress1"></div>
@@ -285,21 +285,21 @@
 					<h3>Experience</h3>
 					<p class="experience__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 				</div>
-				<div class="row">
-					<div class="col-8 col-md-4">
+				<div class="row experience__blok">
+					<div class="col-8 col-md-4 ">			
 						<div class="experience__start__left">
 							<h4>Personal Adviser</h4>
 							<h4>2015 - 2016</h4>
 						</div>
 					</div>
-					<div class="col-12 col-md-8">
+					<div class="col-12 col-md-8">				
 						<div class="experience__start__right">
 						 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cupiditate ratione dolore. ipsum dolor sit amet consectetur, adipisicing elit. 
 							 Quaerat doloribus ex nihil magnam quod! Eum.</p>
 						</div>
 					</div>
 				</div>
-		<div class="row">
+		<div class="row experience__blok">
 					<div class="col-12 col-md-8">
 						<div class="experience__end__left">							
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cupiditate ratione dolore. ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -313,7 +313,7 @@
 						</div>
 					</div>
 				</div>
-					<div class="row">
+					<div class="row experience__blok">
 						<div class="col-8 col-md-4">
 							<div class="experience__start__left">
 								<h4>Personal Adviser</h4>
@@ -327,7 +327,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row experience__blok">
 						<div class="col-12 col-md-8">
 							<div class="experience__end__left">							
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cupiditate ratione dolore. ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -355,7 +355,7 @@
 		</div>
 	</div>
 	<div class="row justify-content-center">
-		<div class="col-lg-4 col-md-6">					
+		<div class="col-lg-4 col-md-8">					
 			<div class="blog__card">
 				 <a href=""><img src="img/blog1.jpg" class="card-img-top img-fluid" alt="..."></a>
 				<div class="card-body">
@@ -368,7 +368,7 @@
 				</div>
 			 </div>			
 		</div>
-		<div class="col-lg-4 col-md-6">
+		<div class="col-lg-4 col-md-8">
 			<div class="blog__card">
 				 <a href=""><img src="img/blog2.jpg" class="card-img-top img-fluid" alt="..."></a>
 				<div class="card-body">
@@ -381,7 +381,7 @@
 				</div>
 			 </div>
 		</div>
-		<div class="col-lg-4 col-md-6">
+		<div class="col-lg-4 col-md-8">
 			<div class="blog__card">
 				 <a href=""><img src="img/blog3.jpg" class="card-img-top img-fluid" alt="..."></a>
 				<div class="card-body">
@@ -426,7 +426,10 @@
 					
 				</div>
 					<br>
-					<textarea class="textarea__message" placeholder="Message"></textarea>
+					<div class="col-lg-12">
+						<textarea class="textarea__message" placeholder="Message"></textarea>
+					</div>
+					
 				<br>
 					<button type="submit" class="btn btn-primary">Send Message</button>
 				</form>

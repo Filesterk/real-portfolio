@@ -10,12 +10,6 @@
     @include name-section(); 
     color: $primary-color-text;
     padding-top: 100px;
-     /*padding-top: 110px;
-     
-     margin-bottom: 20px;
-     font-size: 3em;
-     text-transform: uppercase;
-     font-weight: 600;*/
    }
    h4{
      font-size: 1.5em;
@@ -25,27 +19,36 @@
  &__text {
    font-size: 1.25em;
    margin-bottom: 110px;
+   @media screen and (max-width: 992px) {
+    margin-bottom: 3rem;
+   }
  }
  &__start__left {
    text-transform: uppercase;
-   border-right: 10px solid #ff6347;
+   border-right: 10px solid #fff;
    padding-right: 50px;
    text-align: right;
    
+ }
+ &__blok{
+   margin-bottom: 4rem;
+   @media screen and (max-width: 992px) {
+    margin-bottom: 2rem;
+   }
  }
  &__end__left p{
   font-size: 1.25em;
 }
  &__start__right p {
    font-size: 1.25em;
-   margin-bottom: 5rem;
+   //margin-bottom: 5rem;
  }
  &__end__right {
    text-transform: uppercase;
-   border-left: 10px solid #ff6347;
+   border-left: 10px solid #fff;
    padding-left: 50px;
    text-align: left;
-   margin-bottom: 5rem;
+   //margin-bottom: 5rem;
  }
  }
  

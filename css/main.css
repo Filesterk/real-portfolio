@@ -1,11 +1,3 @@
-/*@mixin name-section() {
-  font-size: 3em;
-   color: $primary-color-text;
-   margin-top: 100px;
-   margin-bottom: 10px;
-   text-transform: uppercase;
-   font-weight: 700;
-}*/
 /*HEADER*/
 .header {
   background: url("../img/intro.jpg");
@@ -19,6 +11,28 @@
 @media screen and (max-width: 976px) {
   .header {
     height: 100%;
+  }
+}
+
+.header__inner {
+  height: 100%;
+  min-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .header__inner {
+    min-height: 56px;
+  }
+}
+
+.header__inner nav {
+  height: 100%;
+  min-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .header__inner nav {
+    min-height: 56px;
   }
 }
 
@@ -59,10 +73,6 @@
   color: #FFFFFF;
   margin-top: 60px;
   margin-bottom: -50px;
-  /*font-size: 3em;
-     margin-bottom: -50px;
-     
-     font-weight: 700;*/
 }
 
 .header__title h4 {
@@ -71,13 +81,34 @@
   color: #FFFFFF;
 }
 
+.nav__menu-item {
+  position: relative;
+}
+
+.nav__menu-item::after {
+  position: absolute;
+  content: "-";
+  color: #FFFFFF;
+  top: 20%;
+  right: -50px;
+}
+
 .navbar {
-  background: #15263e;
+  width: 100%;
+  min-height: 100px;
+  font-size: 18px;
+  background-color: #15263E;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 56px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header__title h1 {
-    font-size: 10em;
+    font-size: 6em;
     margin-bottom: -20px;
   }
   .header__title h2 {
@@ -103,10 +134,6 @@
   text-transform: uppercase;
   font-weight: 600;
   color: #212121;
-  /*font-size: 3em;
-     font-weight: 600;
-     padding-top: 100px;     
-     text-transform: uppercase;*/
   text-align: right;
 }
 
@@ -283,13 +310,6 @@
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 60px;
-  /*margin-top: 135px;
-     margin-bottom: 55px;
-     font-size: 3em;
-     
-     font-weight: 700;
-     text-transform: uppercase;
-     text-align: center;*/
 }
 
 @media screen and (max-width: 1600px) {
@@ -349,9 +369,6 @@
 /*PORTFOLIO*/
 .portfolio {
   height: 1510px;
-  /*&__menu ul li:hover {
-   color: #c714d5;
- }*/
 }
 
 @media screen and (max-width: 1600px) {
@@ -445,12 +462,6 @@
   font-weight: 600;
   color: #FFFFFF;
   padding-top: 100px;
-  /*padding-top: 110px;
-     
-     margin-bottom: 20px;
-     font-size: 3em;
-     text-transform: uppercase;
-     font-weight: 600;*/
 }
 
 .experience h4 {
@@ -464,11 +475,27 @@
   margin-bottom: 110px;
 }
 
+@media screen and (max-width: 992px) {
+  .experience__text {
+    margin-bottom: 3rem;
+  }
+}
+
 .experience__start__left {
   text-transform: uppercase;
-  border-right: 10px solid #ff6347;
+  border-right: 10px solid #fff;
   padding-right: 50px;
   text-align: right;
+}
+
+.experience__blok {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .experience__blok {
+    margin-bottom: 2rem;
+  }
 }
 
 .experience__end__left p {
@@ -477,15 +504,13 @@
 
 .experience__start__right p {
   font-size: 1.25em;
-  margin-bottom: 5rem;
 }
 
 .experience__end__right {
   text-transform: uppercase;
-  border-left: 10px solid #ff6347;
+  border-left: 10px solid #fff;
   padding-left: 50px;
   text-align: left;
-  margin-bottom: 5rem;
 }
 
 /*BLOG*/
@@ -520,8 +545,8 @@
 
 .blog__card {
   width: 370px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -552,10 +577,6 @@
   font-weight: 600;
   color: #FFFFFF;
   margin-top: 10px;
-  /*font-size: 3em;
-     font-weight: 600;
-     text-transform: uppercase;
-     margin-bottom: 30px;*/
 }
 
 .intro p {
@@ -609,7 +630,7 @@
 
 @media screen and (max-width: 992px) {
   .container__form {
-    padding-top: 30px;
+    padding-top: 10px;
   }
   .intro h1 {
     font-size: 2.5em;

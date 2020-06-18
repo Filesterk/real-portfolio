@@ -7,10 +7,6 @@
     @include name-section();
      color: $primary-color-text;
      margin-top: 10px;
-     /*font-size: 3em;
-     font-weight: 600;
-     text-transform: uppercase;
-     margin-bottom: 30px;*/
    }
    p {
      color: $primary-color-text;
@@ -57,7 +53,7 @@
  }
  @media screen and (max-width: 992px) {
    .container__form{
-     padding-top: 30px;
+     padding-top: 10px;
    }
    .intro{
  h1{
