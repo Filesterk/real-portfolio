@@ -19,7 +19,7 @@
   min-height: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header__inner {
     min-height: 56px;
   }
@@ -30,7 +30,7 @@
   min-height: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header__inner nav {
     min-height: 56px;
   }
@@ -81,16 +81,67 @@
   color: #FFFFFF;
 }
 
-.nav__menu-item {
-  position: relative;
+.nav__menu {
+  list-style: none;
+  text-align: center;
 }
 
-.nav__menu-item::after {
-  position: absolute;
+.nav__menu li {
+  display: inline-block;
+}
+
+.nav__menu li:after {
   content: "-";
   color: #FFFFFF;
-  top: 20%;
-  right: -50px;
+  display: inline-block;
+}
+
+.nav__menu li:last-child:after {
+  content: none;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  position: relative;
+  margin: 0 34px 0 0;
+  font-size: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.nav__menu a.current, .nav__menu a:hover {
+  color: #a21af0;
+}
+
+@media screen and (max-width: 1210px) {
+  .nav__menu a {
+    margin: 0 23px 0 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav__menu a {
+    margin: 0 1px 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    padding-top: 0;
+  }
+  .nav__menu li {
+    display: block;
+  }
+  .nav__menu li:after {
+    content: none;
+  }
+  .nav__menu a {
+    margin: 0 30px;
+  }
 }
 
 .navbar {
@@ -655,7 +706,7 @@ footer p {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 15px;
 }
 
 .btn {
